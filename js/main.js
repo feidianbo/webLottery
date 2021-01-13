@@ -367,7 +367,10 @@ function save_setting() {
     "background",
     "url(" +
       $("input[name=background_image]").val() +
-      ") center center no-repeat"
+      ")"
+  );
+  $("#tabs-1").css(
+    "background-size", "cover"
   );
 
   game.init();
